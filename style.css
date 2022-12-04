@@ -1,0 +1,568 @@
+@charset "utf-8";
+/* ハンバーガー */
+/*=============================
+.btn-trigger
+=============================*/
+.btn-trigger {
+    display: none;
+}
+nav{
+     display: none;
+}
+  
+/* ヘッダー */
+body{
+    background-color: #EDEBE9;
+    font-family: "Noto Sans JP", sans-serif;
+}
+.wrapper{
+    max-width: 100%;
+}
+.nav{
+ 
+    background-color: white;
+    justify-content: space-between;
+    padding-left: 40px;
+}
+.nav-left ul{
+    margin: 0;
+    padding: 0;
+}
+.nav-left li {
+    list-style: none;
+  
+    display: inline-block;
+    padding: 41px 30px 41px 0;
+}
+.nav-left a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+   
+}
+.nav-left a:hover{
+    color: #00754a;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    
+}
+.logo{
+    margin-right: 40px;
+}
+.nav-right{
+    display: flex;
+}
+.nav-right li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 36px;
+    padding: 36px 36px 36px 0;
+    align-items: center;
+}
+.nav-right ul{
+    margin: 0;
+}
+#STORIES_logo{
+    margin: 33px 0;
+}
+.story{
+    padding: 0 25px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.staR{
+    padding: 25px 50px;
+}
+.mylogin{
+    position: relative;
+    
+}
+.mypage{
+    position: absolute;
+    top: 60px;
+    left: -15px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px -2px rgba(10,10,10,0.1), 0px 0px 0px 1px rgba(10,10,10,0.02);
+    width: 200px;
+    visibility: hidden;
+  
+}
+.mypage li{
+    padding: 4px;
+}
+.mypage a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 12px;
+}
+.mylogin:hover .mypage {
+   visibility: visible ; 
+   
+}
+.mylogin-page{
+    padding:15px 10px 10px 10px;
+}
+.mylogin svg:hover{
+    filter: brightness(0) saturate(100%) invert(33%) sepia(44%) saturate(960%) hue-rotate(111deg) brightness(93%) contrast(103%);
+}
+
+/* メイン */
+.main2{
+    display: none;
+}
+.main-right img{
+    padding: 0;
+    display: block;
+
+}
+.main-right a:hover{
+    opacity: 0.9;
+}
+.main-left a:hover{
+    opacity: 0.9;
+}
+
+.main{
+    
+        width: 100%;
+        gap: 8px;
+        display: grid;
+        grid-template-columns: calc(50vw - 4px) calc(50vw - 4px);
+        grid-template-rows: repeat(2, calc(25vw - 6px));
+        background-color: #edebe9;
+        justify-content: end;
+    
+}
+
+/* brewing */
+.brewing{
+    background-color: white;
+    padding: 78px 0 60px 0;
+}
+.sentence{
+    margin-bottom: 56px;
+    text-align: center;
+}
+.sentence h2{
+    font-size: 20px;
+    line-height: 21px;
+    font-weight: 700;
+    font-family: SoDoSans;
+   
+}
+.card{
+    border-radius: 10px;
+    width: 224px;
+}
+.card img{
+    border-radius: 10px 10px 0 0;
+}
+.card-body{
+    padding: 12px 7px 20px 14px;
+}
+.card-text{
+    font-family: "Noto Sans JP", sans-serif;;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+.day{
+    display: flex;
+    justify-content: end;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 21px;
+    font-family: "SoDoSans";
+    margin:0 15px 0 0;
+    letter-spacing: -0.6px;
+}
+.brewing-list a{
+    text-decoration: none;
+    color: black;
+    width: 224px !important;
+}
+.brewing-list{
+    margin:0 40px;
+}
+.swiper-pagination{
+    display: none;
+}
+.swiper-button-disabled{
+    display: none !important;
+}
+
+ 
+  .swiper-button-next, .swiper-button-prev{
+    
+    background-color: white !important;
+    width: 40px !important ;
+    height: 40px !important;
+    border-radius: 50px;
+   
+  }
+  .swiper-button-next::after,.swiper-button-prev::after{
+  display: none;
+  }
+  .next {
+    display: inline-block;
+    vertical-align: middle;
+    color: #333;
+    line-height: 1;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    transform: translateX(-25%) rotate(45deg);
+  }
+  
+  .next::before, .next::after {
+    content: '';
+    position: absolute;
+    background: currentColor;
+    border-radius: 0.1em;
+  }
+  
+  .next::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0.1em;
+  }
+  
+  .next::after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0.1em;
+  }
+  .prev {
+    display: inline-block;
+    vertical-align: middle;
+    color: #333;
+    line-height: 1;
+    width: 10px;
+    height: 10px;
+    border: 0.1em solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateX(25%) rotate(-135deg);
+  }
+  /* 宣伝 */
+.advertise{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+.adv{
+    display: flex;
+    padding-right: 130px;
+}
+.adv img{
+    width: 115px;
+    height: 115px;
+    margin-right: 10px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.adv-tex{
+   
+   align-items: center;
+   vertical-align: middle;
+  color: black;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  width: 122px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;;
+}
+.advertise a{
+    text-decoration: none !important;
+}
+/* タブメニュー */
+.TabMenu {
+    text-align: center;
+  }
+  
+  .Tabs {
+    justify-content: center;
+    display: flex;
+   
+  }
+  
+  .Tab {
+    padding: 13px 0;
+    margin-right: 32px;
+    list-style: none;
+    opacity: 0.8;
+   
+  }
+  
+  .Tab__isActive {
+    opacity: 1;
+    
+  }
+
+  
+  .Content {
+    display: none;/* 最初は非表示 */
+
+  }
+  
+  .Content__isActive {
+    display: block; /* アクティブなものだけ表示 */
+  }
+
+  .borderCent{
+    position: relative;
+  display: inline-block;
+  }
+  .borderCent:hover{
+    opacity: 1;
+  }
+  .borderCent::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 4px;
+    background-color: #00754A;
+    transition: .3s;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    
+    
+  }
+  .borderCent:hover::after {
+    width: 100%;
+    
+  }
+  .Tab__isActive{
+    position: relative;
+    display: inline-block;
+  }
+  .Tab__isActive{
+ border-bottom:4px solid #00754A;
+  }
+  /* タブカード */
+  .card-text2{
+    font-family: "Noto Sans JP";
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+  .card-body2{
+    padding: 0 10px 0 11px;
+  }
+  .price{
+    font-size: 14px;
+    line-height: 17px;
+    font-family:SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif; ;
+    font-weight: 600;
+    padding-top: 40px;
+    margin: 0;
+  }
+  .btn{
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 500;
+    margin: 7px 0 10px 0;
+    color: #00754a;
+    font-family: "Noto Sans JP";;
+    width: 100%;
+   padding: 5px 0 6px 0;
+   background-color: white;
+   border: 1px solid #00754a ;
+   border-radius: 50px !important;
+
+  }
+  .btn:hover{
+    opacity: 0.7;
+    color: #00754A;
+    background-color: rgb(244, 244, 244);
+  }
+  .Contents{
+    padding: 0;
+    margin: 0;
+  }
+  .Content{
+    padding: 48px 0 54px 0;
+    background-color: rgb(212,233,226);
+
+  }
+  .Tabs{
+    margin: 0;
+  }
+ .product{
+    margin-right: 8px;
+  }
+  .product-list{
+    display: flex;
+    margin: 0 40px;
+  }
+  .online{
+    padding-bottom: 0;
+  }
+  /* STORIES JP */
+  .sentence a{
+    text-decoration: none;
+    color: #00754A;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    
+  }
+  .story-card{
+    padding: 12px 14px 16px 14px;
+  }
+  .story-btw{
+    display: flex;
+    justify-content: space-between;
+  }
+  .category{
+    font-family: SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;;
+    font-size: 10px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #00754A;
+    letter-spacing: -0.6px;
+    margin-bottom:0 ;
+  }
+  .story-tex{
+    font-family: "Noto Sans JP";;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+  
+  }
+  /* divide */
+  .divide{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f1f0ee;
+  }
+  .divide-block{
+    /* flex: 0 0 calc(50% - 4px);
+    max-width: calc(50% - 4px); */
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    background-color: #fff;
+    padding: 80px 63px;
+  }
+  .divide-block h3{
+    font-family: "Noto Sans JP";;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 700;
+    margin-bottom: 56px;
+  }
+.tex-div{
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: "Noto Sans JP";;
+  margin-bottom: 32px;
+  color: black !important;
+  justify-content: flex-start !important;
+}
+
+.post-day{
+  font-family: SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;;
+  margin-right:75px ;
+}
+.divide-block a{
+  text-decoration: none;
+  color: #00754A;
+  font-size: "Noto Sans JP";;
+  font-size: 13px;
+  line-height: 24px;
+  display: flex;
+  justify-content: right;
+  font-weight: 400;
+}
+/* フッター */
+.footer{
+  background-color: white;
+  padding: 56px 170px;
+}
+.footer-content{
+  display: flex;
+  padding-bottom: 28px;
+}
+.foot{
+  margin-right: 60px;
+}
+.foot a{
+  text-decoration: none;
+  color: black;
+  font-size:13px ;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: "Noto Sans JP", sans-serif;;
+  
+}
+.foot li{
+  list-style: none;
+  margin-bottom: 16px;
+}
+.list-strg{
+font-family: SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;;
+font-size: 20px;
+font-weight: 600;
+line-height: 35px;
+padding-bottom: 20px;
+}
+.AcordionMenu{
+  display: none;
+}
+/* フッターのその下 */
+.footer-beneath{
+  border-top: 1px solid rgb(229,229,229);
+}
+.beneath-content{
+  display: flex;
+  justify-content: space-between;
+  padding: 33px 0 5px 0;
+}
+.privacy ul,.sns ul{
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.privacy li, .sns li{
+  list-style: none;
+}
+.privacy a{
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13px;
+  font-family: "Noto Sans JP", sans-serif;;
+}
+.sns li{
+  margin: 0 8px 16px 8px;
+}
+.privacy li{
+margin-bottom: 15px;
+}
+.footer-beneath p{
+  font-size: 13px;
+  line-height: 23px;
+  font-family: SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;;
+}
