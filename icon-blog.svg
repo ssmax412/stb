@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<style>
+@font-face {
+  font-display: auto;
+  font-family: SoDoSans;
+  font-style: normal;
+  src: url("//d3vgbguy0yofad.cloudfront.net/common/fonts/SoDoSans/SoDoSans-Regular.woff2")
+      format("woff2"),
+    url("//d3vgbguy0yofad.cloudfront.net/common/fonts/SoDoSans/SoDoSans-Regular.woff")
+      format("woff");
+}
+</style>
+  <g id="Group_47928" data-name="Group 47928" transform="translate(-16 -384)">
+    <circle id="Ellipse_3000" data-name="Ellipse 3000" cx="16" cy="16" r="16" transform="translate(16 384)" fill="rgba(0,0,0,0.87)"/>
+    <text id="Blog" transform="translate(20 404)" fill="#fff" font-size="12" font-family="SoDoSans, sans-serif" letter-spacing="-0.05em"><tspan x="0" y="0">Blog</tspan></text>
+  </g>
+</svg>
