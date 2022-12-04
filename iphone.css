@@ -1,0 +1,201 @@
+
+    /*520px以下で文字色青色になる*/
+    @media screen and (max-width: 520px) {
+   
+      .main {
+        display: none;
+      }
+      .header-top{
+        justify-content: space-between;
+        display: flex;
+      }
+    .logo svg{
+        margin: 12px;
+    }
+    .header-top-right{
+        display: flex;
+    }
+    .header-top-right li{
+        list-style: none;
+        display: inline;
+    }
+.sp{
+  display: none !important;
+}
+.nav-right li{
+  margin-top:25px;
+  padding: 0 32px 0 0;
+}
+.nav{
+  padding: 0;
+}
+
+/* ハンバーガー */
+/*=============================
+.btn-trigger
+=============================*/
+.btn-trigger {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin: 28px 20px 0 0 !important;
+}
+.btn-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  border-radius: 4px;
+}
+.btn-trigger, .btn-trigger span {
+  display: inline-block;
+  transition: all .5s;
+  box-sizing: border-box;
+}
+.btn-trigger span:nth-of-type(1) {
+  top: 0;
+}
+.btn-trigger span:nth-of-type(2) {
+  top: 9px;
+}
+.btn-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+
+/*=============================
+#btn01
+=============================*/
+#btn01.active span:nth-of-type(1) {
+  -webkit-transform: translateY(10px) rotate(-45deg);
+  transform: translateY(9px) rotate(-45deg);
+}
+#btn01.active span:nth-of-type(2) {
+  opacity: 0;
+}
+#btn01.active span:nth-of-type(3) {
+  -webkit-transform: translateY(-10px) rotate(45deg);
+  transform: translateY(-9px) rotate(45deg);
+}
+/* 装飾 */
+.nav-top li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.nav-middle li{
+  margin-bottom:32px ;
+  font-size: 16px;
+  font-weight: 700;
+}
+.nav-top ul, .nav-middle ul{
+  padding: 0;
+}
+.nav-top{
+  border-bottom: 2px solid #ECECEC;
+}
+.nav-middle{
+  padding-top: 32px;
+  border-bottom: 2px solid #ECECEC;
+}
+.nav-bottom{
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 20px ;
+}
+.nav-bottom svg{
+  margin: 0 !important;
+}
+nav{
+  display: block;
+}
+.nav{
+  position: relative;
+  width:100%;
+  box-shadow: 0 -1px !important;
+  transition: 0.5s;
+}
+#nav{
+  width: 295px !important;
+  height: 100vh;
+  position: absolute;
+  position: fixed;
+  right: -295px !important;
+  top: 72px !important;
+  background-color: white;
+  transition: 0.6s;
+  padding: 42px 24px 0 24px;
+  
+}
+.fix{
+  z-index: 999;
+  position: fixed;
+  overflow: hidden;
+  
+}
+.show{
+  transform: translate3d(-295px,0,0) !important;
+}
+.transparent{
+  filter:invert(40%);  
+  transition: 0.5s;
+}
+/* メイン */
+.main2{
+  display: block;
+}
+.main-right2{
+  display: flex;
+}
+.main-right2{
+  margin: 5px 0 0 0 ;
+}
+.main-right2 a:hover{
+  opacity: 0.9;
+}
+.main-left2 a:hover{
+  opacity: 0.9;
+}
+/* Swiper*/
+.brewing{
+  padding-top: 55px;
+}
+.sentence{
+  margin-bottom: 40px;
+}
+/* 宣伝 */
+.adv img{
+  width: 77px;
+  height: 77px;
+  margin-right: 16px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.advertise{
+  flex-direction: column;
+  padding:16px;
+}
+.adv-tex{
+  width: auto !important;
+}
+.adv{
+  padding: 0;
+}
+.sentence a{
+  display: none;
+}
+/* divide */
+.divide-block{
+  padding: 56px 16px;
+}
+.tex-div{
+  flex-direction: column;
+}
+.post-day{
+  margin-bottom: 16px;
+}
+    }
+    
